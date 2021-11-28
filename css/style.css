@@ -1,7 +1,17 @@
+.container1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    height: 2000px;
+}
+
 .container {
     display: flex;
     width: 100%;
+    height: 60%;
     box-sizing: border-box;
+    overflow: hidden
 }
 
 .container .imgs {
@@ -18,6 +28,8 @@
     margin-top: 2%;
     margin-left: 1%;
     margin-right: 1%;
+    display: flex;
+    flex-direction: column;
 }
 
 .container .actions {
@@ -198,4 +210,42 @@
     align-items: center;
     border: 1px solid black;
     padding: 5px;
+}
+
+
+/*carsol */
+
+.carsol {
+    display: flex;
+    height: 200px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}
+
+.carsol .car-content {
+    width: 90%;
+    height: 200px;
+    border: 1px solid red;
+    display: flex;
+}
+
+.carsol .btn-left,
+.carsol .btn-right {
+    height: 50px;
+    width: 3%;
+    border: 1px solid black;
+}
+
+.add-content {
+    display: flex;
+    flex-direction: column;
+    width: 12%;
+    margin-left: 1%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.img1 {
+    width: 90%;
 }
