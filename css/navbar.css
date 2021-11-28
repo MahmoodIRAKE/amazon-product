@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* varibales*/
+
+:root {
+    --main-bg-color: coral;
+}
+
+
+/*nav bar*/
+
+.nav {
+    height: 14vh;
+    width: 100vw;
+    background-color: #131921;
+}
+
+.nav .first-nav {
+    width: 100%;
+    height: 60%;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.nav .second-nav {
+    width: 100%;
+    height: 40%;
+    background-color: #232F3E;
+}
+
+
+/*first nav blocks*/
+
+.first-nav .logo {
+    height: 100%;
+    width: 8%;
+    margin-left: 2px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background: url(../assets/images/nav-logo1.png) 0px -33px;
+}
+
+.first-nav .logo:hover {
+    border: 1px solid white;
+}
+
+
+/*location where to deliver in the nav bar */
+
+.first-nav .location {
+    height: 100%;
+    display: flex;
+    width: 6%;
+    margin-left: 2px;
+    color: white;
+    background-position: center center;
+    background-repeat: no-repeat;
+    line-height: 0.7rem;
+}
+
+.first-nav>.location:hover {
+    border: 1px solid #fff;
+}
+
+.first-nav .location .location-img {
+    width: 25%;
+    height: 100%;
+    background: url(../assets/images/nav-logo1.png) -65px -360px;
+}
+
+.first-nav .location .location-text p {
+    margin-top: 20%;
+    color: #a09c95;
+    font-size: 14px;
+    margin-left: 0;
+}
+
+.first-nav .location .location-text h4 {
+    margin-top: 8%;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/* search bar */
+
+.search {
+    width: 60%;
+    border-radius: 5px;
+    background-color: #ffff;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+
+.search .all {
+    width: 6%;
+    background-color: #F3F3F3;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.search .icon {
+    width: 6%;
+    background-color: #FEBD69;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.search .in {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*flag in navbar*/
+
+.flag {
+    width: 3%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    padding: 2px;
+}
+
+.flag .temp {
+    display: flex;
+    height: 40%;
+    justify-content: center;
+}
+
+.flag .country {
+    width: 60%;
+    height: 19px;
+    margin-right: 5px;
+    background: url(../assets/images/flag.png) 0px -425px;
+}
+
+.flag .temp2 {
+    width: 30%;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.arrow {
+    width: 7px;
+    height: 4px;
+    background: url(../assets/images/arrow-down.png) no-repeat center center/cover;
+}
+
+.first-nav>.flag:hover {
+    border: 1px solid #fff;
+}
+
+
+/* hello and sign*/
+
+.account {
+    width: 8.4%;
+    height: 75%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    padding: 2px;
+    line-height: 0.8rem;
+}
+
+.hello {
+    display: flex;
+    align-items: center;
+    color: #fdfdfd;
+    font-size: 12px;
+}
+
+.lists {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.account .lists .arrow {
+    margin-top: 4px;
+    margin-left: 3px;
+}
+
+.first-nav>.account:hover {
+    border: 1px solid #fff;
+}
+
+
+/*return and orders */
+
+.orders {
+    width: 5%;
+    height: 75%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    padding: 5px;
+    line-height: 0.8rem;
+}
+
+.first-nav>.orders:hover {
+    border: 1px solid #fff;
+}
+
+
+/*cart*/
+
+.cart {
+    width: 6%;
+    height: 75%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    line-height: 0.8rem;
+    padding: 2px;
+}
+
+.cart .cart-icon {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.cart .cart-logo {
+    z-index: 0;
+    height: 100px;
+    width: 70px;
+    text-align: center;
+    background: url(../assets/images/nav-logo1.png) 4px -335px;
+    color: #EE8804;
+    font-size: 28px;
+}
+
+.cart .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.first-nav>.cart:hover {
+    border: 1px solid #fff;
+}
+
+
+/*second NAv */
+
+.second-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-nav ul {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+.second-nav ul li {
+    color: #fff;
+    margin-left: 5px;
+    padding: 2px 5px;
+    font-size: 14px;
+}
+
+.second-nav .l-child {
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    height: 90%;
+}
+
+.second-nav ul li:hover {
+    border: 1px solid #fff;
+}
+
+.second-nav .l-child:hover {
+    border: 1px solid #fff;
+}
+
+.draw {
+    width: 30px;
+    height: 15px;
+    background: url(../assets/images/nav-logo1.png) -165px -254px;
+}
+
+.second-nav ul li:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*orange header*/
+
+.orange {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orange .orange-img {
+    width: 40%;
+    height: 40px;
+    background: url(../assets/images/orange-img.jpg) no-repeat center center/cover;
+}
+
+
+/*back travk*/
+
+.back {
+    display: flex;
+    font-size: 8px;
+    align-items: flex-end;
+    height: 30px;
+}
+
+.back i {
+    margin-left: 20px;
+    font-size: 6px;
+    color: #5f5d5a;
+}
+
+.back .link1 {
+    margin-left: 3px;
+    font-size: 11px;
+    line-height: 0.3rem;
+    color: #5f5d5a;
+}
+
+.back .link1:hover {
+    border-bottom: 1px solid black;
+}

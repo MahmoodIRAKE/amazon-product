@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.container .imgs {
+    width: 40%;
+    height: 400px;
+    border: 1px solid red;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .details {
+    width: 35%;
+    height: 400px;
+    border: 1px solid red;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.container .actions {
+    width: 15%;
+    height: 400px;
+    margin-right: 2%;
+    border: 1px solid red;
+}
+
+
+/* styling image container*/
+
+.imgs .img-x {
+    width: 100%;
+    height: 300px;
+    border: 1px solid blue;
+}
+
+.imgs .imgs-list {
+    margin-top: 10%;
+    width: 100%;
+    height: 100px;
+    border: 1px solid blue;
+}
