@@ -1,25 +1,21 @@
 .container {
     display: flex;
     width: 100%;
-    height: 400px;
-    border: 1px solid black;
+    box-sizing: border-box;
 }
 
 .container .imgs {
     width: 40%;
-    height: 400px;
-    border: 1px solid red;
     margin-left: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    margin-top: 5%;
 }
 
 .container .details {
     width: 35%;
-    height: 400px;
-    border: 1px solid red;
+    margin-top: 2%;
     margin-left: 1%;
     margin-right: 1%;
 }
@@ -28,6 +24,7 @@
     width: 15%;
     height: 400px;
     margin-right: 2%;
+    margin-top: 2%;
     border: 1px solid red;
 }
 
@@ -36,13 +33,84 @@
 
 .imgs .img-x {
     width: 100%;
-    height: 300px;
-    border: 1px solid blue;
 }
 
 .imgs .imgs-list {
-    margin-top: 10%;
     width: 100%;
-    height: 100px;
-    border: 1px solid blue;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.imgs .imgs-list li {
+    margin-left: 10px;
+}
+
+.temp3 {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+}
+
+.imgs .imgs-list li:hover {
+    box-shadow: 0 0 3px rgb(177, 100, 13), 0 0 3px rgb(177, 100, 13), 0 0 3px rgb(177, 100, 13), 0 0 3px rgb(177, 100, 13), 0 0 3px rgb(177, 100, 13), 1px 1px 3px rgb(177, 100, 13), 1px 1px 3px rgb(177, 100, 13);
+    ;
+}
+
+
+/* details content style*/
+
+.main-text {
+    font-size: 26px;
+}
+
+.blue-text {
+    color: #018dd8;
+}
+
+.blue-text:hover {
+    color: rgb(255, 102, 102);
+    border-bottom: 1px solid rgb(255, 102, 102);
+    width: 19%;
+}
+
+.divider {
+    height: 20px;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    margin-bottom: 4%;
+}
+
+.making-red {
+    color: #B12A31;
+    font-size: 22px;
+}
+
+.grey-text {
+    color: #4e4e4e;
+}
+
+.d-link {
+    color: royalblue;
+}
+
+.d-link i {
+    font-size: 7px;
+}
+
+.d-link:hover {
+    color: #B12A31;
+}
+
+.details ul {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.details ul li {
+    margin-bottom: 2px;
 }
