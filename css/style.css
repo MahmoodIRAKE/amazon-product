@@ -21,11 +21,14 @@
 }
 
 .container .actions {
+    display: flex;
+    flex-direction: column;
     width: 15%;
-    height: 400px;
     margin-right: 2%;
     margin-top: 2%;
-    border: 1px solid red;
+    border: 1px solid rgb(119, 119, 119);
+    border-radius: 10px;
+    padding: 15px;
 }
 
 
@@ -109,8 +112,90 @@
 .details ul {
     font-size: 15px;
     margin-left: 15px;
+    height: 500px;
 }
 
 .details ul li {
     margin-bottom: 2px;
+}
+
+.details ul li:nth-child(7),
+.details ul li:nth-child(8),
+.details ul li:nth-child(9),
+.details ul li:nth-child(10) {
+    display: none;
+}
+
+.green-text {
+    color: rgb(0, 100, 0);
+    font-size: 18px;
+}
+
+
+/*left side and buttons */
+
+.qty {
+    height: 20px;
+    width: 26%;
+    border-radius: 8px;
+    background-color: #E3E6E6;
+    font-size: 12px;
+    text-align: center;
+    box-shadow: grey 1px 1px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qty:hover {
+    background-color: #989b9b;
+}
+
+.add {
+    height: 28px;
+    width: 80%;
+    border-radius: 30px;
+    background-color: #FFD814;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add:hover {
+    background-color: #ddbb13;
+}
+
+.buy {
+    height: 28px;
+    width: 80%;
+    border-radius: 30px;
+    background-color: #FFA41C;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buy:hover {
+    background-color: #e2931c;
+}
+
+.actions .d-link i {
+    font-size: 14px;
+    color: rgb(185, 185, 185);
+}
+
+.add-list {
+    height: 28px;
+    width: 80%;
+    background-color: #EDEFF1;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
 }
